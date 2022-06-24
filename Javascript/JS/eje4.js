@@ -15,12 +15,11 @@ function getPersona(persona) {
   //Primero con ObjectEntries convertimos nuestro obj en una matriz con clave y valores
   //Lo segundo usamos filter para que me devuelva un array con las claves a buscar
   // Finalmente convertimos nuestro array o lista en un objeto con clave y valores
-  const Persona = Object.fromEntries(
+  return Object.fromEntries(
     Object.entries(persona).filter(
       ([key]) => key != 'employed' && key != 'dni',
     ),
   )
-  return Persona
 }
 
 console.log(getPersona(persona))

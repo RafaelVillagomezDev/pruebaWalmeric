@@ -8,11 +8,7 @@ function isPalindromo(parametro) {
     const cadena = parametro.toLowerCase().replace(/\s/g, '')
     //Ordenamos al reves y unicmos valores mediante joint
     const palindromo = cadena.split('').reverse().join('')
-    if (palindromo == cadena) {
-      return true
-    } else {
-      return false
-    }
+    return palindromo == cadena
   } else {
     console.log('No es una cadena de strings ')
     return false

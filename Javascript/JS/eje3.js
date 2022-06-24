@@ -11,12 +11,10 @@ const persona = {
 }
 //Opcion 1//
 function newPersona(persona) {
-  const newObj = {
+  return {
     name: persona['name'],
     age: persona['age'],
   }
-
-  return newObj
 }
 
 //Opcion 2 //
@@ -25,8 +23,8 @@ function newPersona(persona) {
 //     Object.entries(persona).filter(([key]) => key == 'name' || key == 'age'),
 //   )
 
-//   const newObj = Object.assign(valoresPersona)
-//   return newObj
+//   return  Object.assign(valoresPersona)
+//
 // }
 
 console.log(newPersona(persona))

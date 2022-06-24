@@ -8,8 +8,7 @@ function multiplos(numbers) {
   //Eliminamos valores repetidos
   const arrayUnicos = new Set(numbers)
   const array = [...arrayUnicos]
-  const multiplos = array.filter((num) => num % 7 == 0)
-  return multiplos
+  return array.filter((num) => num % 7 == 0)
 }
 
 //Opcion 2:

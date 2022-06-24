@@ -47,12 +47,12 @@ document.getElementById('formulario').addEventListener('submit', (e) => {
       phone: phone.value,
     }
     postUser(obj)
-      .then((result) => console.log(result))
+      .then((result) => {
+        document.getElementById('postMsg').classList.add('visible')
+        document.getElementById('modal').classList.remove('open')
+        console.log(result)
+      })
       .catch((e) => Promise.reject('Error', e))
-
-    const popup = setInterval(function () {
-      document.getElementById('postMsg').classList.add('visible')
-    }, 1000)
   }
 })
 
