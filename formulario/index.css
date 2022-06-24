@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto&display=swap');
+
+body{
+    background-color: white;
+    text-align: center;
+}
+header{
+    
+    background-color: gray;
+    height: 80px;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+#modalbtn{
+    margin-top: 120px;
+    background-color: gray;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+
+
+/*Modal*/
+
+.open{
+    display: block !important;
+}
+
+#modal{
+  
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.content{
+    border-radius: 20px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 800px;
+    height: 400px;
+}
+
+#cerrar{
+    position: absolute;
+    right:12px;
+    top: 12px;
+}
+
+.campo{
+    padding-bottom: 15px;
+}
+.campo label{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    
+}
+
+input[type="text"]{
+    width: 220px;
+    height: 22px;
+    border-radius: 2px;
+    margin-top: 12px;
+}
+
+
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: gray;
+    padding: 8px 14px 8px 14px;
+    border-radius: 12px;
+}
+
+#title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/*Mensaje de error*/
+
+#invalidName{
+    display: none;
+}
+
+#invalidName.visible{
+    display: block;
+    color: red;
+} 
+
+
+#invalidEmail{
+    display: none;
+}
+
+#invalidEmail.visible{
+    display: block;
+    color: red;
+}
+
+
+#invalidPhone{
+    display: none;
+}
+
+#invalidPhone.visible{
+    display: block;
+    color: red;
+}
+
+/*Mensaje de confirmacion*/
+
+#postMsg{
+    display: none;
+    width: 120px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    background-color: green;
+    border-radius: 8px;
+    font-size: 12px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#msgPost{
+    text-align: center;
+    padding-top: 12px;
+}
+
+#postMsg.visible{
+    display: block;
+}
+
+
+@media (min-width:320px)  {
+     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+    .content{
+        width: 300px;
+    }
+    
+    header{
+        font-size: 12px;
+    }
+}
+@media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */
+    .content{
+        width: 400px;
+    }
+
+    header{
+        font-size: 12px;
+    }
+}
+@media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .content{
+        width: 400px;
+    }
+    header{
+        font-size: 16px;
+    }
+}
+@media (min-width:801px)  {
+     /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .content{
+        width: 400px;
+    }
+    header{
+        font-size: 16px;
+    }
+}
+@media (min-width:1025px) {
+     /* big landscape tablets, laptops, and desktops */
+    .content{
+        width: 500px;
+    }
+    header{
+        font-size: 18px;
+    }
+    
+ }
+@media (min-width:1281px) {
+     /* hi-res laptops and desktops */
+    .content{
+        width: 500px;
+    }
+    header{
+        font-size: 18px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PruebaWalmeric</title>
+    <script
+      src="https://kit.fontawesome.com/c2d2701e65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Prueba Walmeric Formulario</h1>
+    </header>
+    <input type="button" id="modalbtn" value="abrir" />
+    <!---Modal--->
+    <div class="modal" id="modal">
+      <div class="content">
+        <div id="cerrar">
+          <i class="fa-solid fa-xmark" id="close-nav"></i>
+        </div>
+        <div id="title">
+          <h2>Formulario</h2>
+        </div>
+        <div id="formulario">
+          <form name="form" id="formulario" action="" method="POST">
+            <div class="campo">
+              <label for="name" class="name_text">Nombre:</label></br>
+              <input type="text" id="name" name="name" />
+              <br />
+              <span id="invalidName" >Nombre requerido y mayor de 2 caracteres</span>
+            </div>
+            <div class="campo">
+              <label for="email" class="email_text">Email:</label></br>
+              <input type="text" id="email" name="email"  />
+              <br/>
+              <span id="invalidEmail" >Email no valido debe tener al menos un @ y un .</span>
+            </div>
+            <div class="campo">
+              <label for="phone" class="phone_text">Numero de telefono</label></br>
+              <input type="text" id="phone" name="phone" />
+              <br />
+              <span id="invalidPhone" >Número de telefono no valido debe tener al menos 9 cifras numericas</span>
+              </div>
+            </div>
+            <input id="btn_enviar" type="submit" value="Enviar"/>
+          </form>
+          
+        </div>
+      </div>
+      <div id="postMsg">
+        <p id="msgPost">Enviado</p>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+  
+</html>
